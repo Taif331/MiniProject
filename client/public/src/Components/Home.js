@@ -15,14 +15,14 @@ import History from '../Images/History.jpeg';
 import Music from '../Images/Music.jpeg';
 
 const Home = () => {
-  const email = useSelector((state) => state.users.user.email);
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (!email) {
-      navigate("/login");
-    }
+  // const email = useSelector((state) => state.users.user.email);
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   if (!email) {
+  //     navigate("/login");
+  //   }
 
-  }, [email])
+  // }, [email])
     const boxesData = [
       { 
         title: 'Medical books', 
@@ -84,7 +84,7 @@ const Home = () => {
       </Row>
 
      
-      <Row>
+      {/* <Row>
           <Col md={3}>
               <User />
           </Col>
@@ -99,7 +99,7 @@ const Home = () => {
           <Col md={9}>
               <Posts />
           </Col>
-      </Row>
+      </Row> */}
   </div>
 );
 };
